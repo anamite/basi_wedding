@@ -5,10 +5,6 @@ const ReceptionPage = () => {
   const [showBasithFamily, setShowBasithFamily] = useState(false);
   const [showShireenFamily, setShowShireenFamily] = useState(false);
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <article className="page active">
       <div className="content">
@@ -54,15 +50,6 @@ const ReceptionPage = () => {
               Open in Maps
             </a>
           </div>
-        </div>
-        <div className="actions">
-          <button className="btn" onClick={handlePrint}>Print / Save PDF</button>
-          <a 
-            className="btn ghost" 
-            href="mailto:aboobacker@example.com?subject=RSVP%20Reception%20Basith%20%26%20Shireen"
-          >
-            RSVP
-          </a>
         </div>
       </div>
       <div className="footer-note">We look forward to celebrating with you.</div>
