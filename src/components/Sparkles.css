@@ -1,0 +1,64 @@
+.sparkles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, rgba(207, 168, 90, 0.9), transparent);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 6px rgba(207, 168, 90, 0.8),
+    0 0 12px rgba(207, 168, 90, 0.4);
+  animation: sparkleFloat linear infinite;
+  opacity: 0;
+}
+
+.sparkle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent);
+  border-radius: 50%;
+  animation: sparkleGlow 2s ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-20vh) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkleGlow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,96 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(63, 11, 11, 0.95) 0%, rgba(43, 8, 8, 0.98) 100%);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(207, 168, 90, 0.2);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  animation: slideUpIn 0.8s ease forwards;
+}
+
+.brand {
+  display: none;
+}
+
+.crest {
+  display: none;
+}
+
+.navlinks {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.navlinks a {
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  color: var(--ivory);
+  opacity: 0.9;
+  font-size: 15px;
+  transition: all 0.3s;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navlinks a.active,
+.navlinks a:hover {
+  background: linear-gradient(90deg, var(--gold), #e6c77d);
+  color: #2b1f12;
+  box-shadow: 0 6px 18px rgba(207,168,90,0.3);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+@keyframes slideUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 480px) {
+  nav {
+    padding: 12px 8px;
+  }
+  
+  .navlinks {
+    gap: 8px;
+  }
+  
+  .navlinks a {
+    padding: 10px 16px;
+    font-size: 13px;
+    min-width: 80px;
+  }
+}

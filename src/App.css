@@ -1,0 +1,81 @@
+:root {
+  --maroon: #3f0b0b;
+  --maroon-2: #4b0f0f;
+  --gold: #cfa85a;
+  --ivory: #fff8f3;
+  --muted: #6f5b4a;
+  --card-bg: linear-gradient(180deg, #4b0f0f 0%, #3b0b0b 100%);
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ivory);
+  background: linear-gradient(180deg, #2f0a0a 0%, #f6efe9 100%);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .site {
+    max-width: 100%;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .page {
+    box-shadow: none;
+    page-break-after: always;
+  }
+  
+  .btn {
+    display: none;
+  }
+}
+
+/* Mobile responsive */
+@media(max-width: 768px) {
+  .site {
+    padding: 12px;
+  }
+}
+
+@media(max-width: 480px) {
+  .site {
+    padding: 8px;
+  }
+}
