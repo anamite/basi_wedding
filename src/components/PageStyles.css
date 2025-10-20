@@ -279,12 +279,16 @@
 
 .lead {
   font-size: 16px;
-  color: rgba(255,255,255,0.95);
+  color: var(--gold);
   margin: 6px 0 10px;
   opacity: 0;
   animation: fadeIn 1s 0.4s forwards;
   letter-spacing: 0.5px;
   font-weight: 500;
+  text-shadow: 
+    0 0 15px rgba(207, 168, 90, 0.6),
+    0 0 30px rgba(207, 168, 90, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .date {
@@ -317,20 +321,20 @@
     0 0 10px rgba(207, 168, 90, 0.3);
 }
 
-.date::before {
-  content: '❖';
-  margin-right: 12px;
+.date strong::before {
+  content: '❖ ';
   font-size: 16px;
   color: var(--gold);
   opacity: 0.8;
+  font-weight: 400;
 }
 
-.date::after {
-  content: '❖';
-  margin-left: 12px;
+.date strong::after {
+  content: ' ❖';
   font-size: 16px;
   color: var(--gold);
   opacity: 0.8;
+  font-weight: 400;
 }
 
 /* Gold lines & patterns */
@@ -364,34 +368,7 @@
 }
 
 .gold-pattern {
-  margin: 24px auto;
-  width: 90%;
-  max-width: 500px;
-  height: 40px;
-  background-image: 
-    repeating-linear-gradient(
-      45deg,
-      var(--gold) 0px,
-      var(--gold) 2px,
-      transparent 2px,
-      transparent 8px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      var(--gold) 0px,
-      var(--gold) 2px,
-      transparent 2px,
-      transparent 8px
-    );
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  opacity: 0;
-  animation: fadeIn 1s 0.8s forwards;
-  border: 1px solid rgba(207, 168, 90, 0.3);
-  box-shadow: 
-    0 2px 8px rgba(207, 168, 90, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: none;
 }
 
 .gold-pattern::before {
@@ -413,7 +390,7 @@
 /* Details & venue */
 .details {
   margin-top: 12px;
-  color: var(--ivory);
+  color: rgba(207, 168, 90, 0.85);
   font-size: 14px;
   line-height: 1.6;
   max-width: 640px;
@@ -427,7 +404,7 @@
   margin-top: 8px;
   font-weight: 700;
   font-size: 14px;
-  color: var(--ivory);
+  color: rgba(207, 168, 90, 0.9);
 }
 
 .details .venue a {
@@ -510,10 +487,31 @@
   color: var(--gold);
 }
 
+/* Subtle button link */
+.btn-subtle {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid rgba(207, 168, 90, 0.4);
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  background: transparent;
+  letter-spacing: 0.3px;
+}
+
+.btn-subtle:hover {
+  background: rgba(207, 168, 90, 0.1);
+  border-color: rgba(207, 168, 90, 0.7);
+  color: var(--gold);
+}
+
 /* Footer note */
 .footer-note {
   padding: 20px 24px;
-  color: rgba(255,255,255,0.95);
+  color: rgba(207, 168, 90, 0.9);
   font-size: 14px;
   background: linear-gradient(
     180deg, 

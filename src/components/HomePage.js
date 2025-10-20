@@ -89,14 +89,24 @@ const HomePage = () => {
           <div className="gold-pattern"></div>
           <div className="date"><strong>13 &amp; 14 December 2025</strong></div>
           <div className="gold-line"></div>
-          <div className="details">
-            You are invited to the Nikkah ceremony and Wedding Reception celebrating the marriage of Basith &amp; Shireen. 
-            Scroll down or click the buttons below to view full details and location links. Your presence and prayers are most cherished.
-          </div>
 
           <div className="actions">
-            <button className="btn" onClick={() => scrollToSection(nikkahRef)}>View Nikkah</button>
-            <button className="btn ghost" onClick={() => scrollToSection(receptionRef)}>View Reception</button>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+              <button className="btn" onClick={() => scrollToSection(nikkahRef)}>View Nikkah</button>
+              <div style={{ fontSize: '12px', color: 'rgba(207, 168, 90, 0.9)', textAlign: 'center', letterSpacing: '0.5px' }}>
+                13th Dec. • Noon
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
+              <button className="btn ghost" onClick={() => scrollToSection(receptionRef)}>View Reception</button>
+              <div style={{ fontSize: '12px', color: 'rgba(207, 168, 90, 0.9)', textAlign: 'center', letterSpacing: '0.5px' }}>
+                14th Dec. • Evening
+              </div>
+            </div>
+          </div>
+
+          <div className="details">
+            Scroll down or click the buttons below to view full details and location links.
           </div>
         </div>
         <div className="footer-note">
@@ -136,7 +146,10 @@ const HomePage = () => {
             <p>Bliss Haven, Lake Line Road, Puzhayoram Residency, Madathil Padam, Feroke</p>
           </div>
 
-          <div className="date"><strong>Saturday, 13th December 2025 — 11:30 AM</strong></div>
+          <div className="date">
+            <strong>Saturday, 13th December 2025</strong>
+            <div style={{ marginTop: '8px', fontSize: '16px' }}>11:30 AM</div>
+          </div>
           <div className="gold-line"></div>
           <div className="details">
             <div className="venue">MKH Auditorium — Convention Center, Kuzhimanna, Malappuram</div>
@@ -145,14 +158,11 @@ const HomePage = () => {
                 href="https://www.google.com/maps?sca_esv=bdbe2dd8fffd653b&hl=en&gl=de&kgmid=/g/11h7fn6kn0&shndl=30&shem=lcuae,uaasie,shrtsdl&kgs=71c1fbd820050e8d&um=1&ie=UTF-8&fb=1&sa=X&geocode=KcMIapSESaY7MRzXxYEeAHOj&daddr=Kuzhimanna,+Kerala+673641,+India" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="btn-subtle"
               >
                 Open in Maps
               </a>
             </div>
-          </div>
-
-          <div className="actions" style={{ marginTop: '24px' }}>
-            <button className="btn" onClick={() => scrollToSection(topRef)}>Back to Top</button>
           </div>
         </div>
         <div className="footer-note">We pray for your blessings and presence.</div>
@@ -190,7 +200,10 @@ const HomePage = () => {
             <p>Bliss Haven, Lake Line Road, Puzhayoram Residency, Madathil Padam, Feroke</p>
           </div>
 
-          <div className="date"><strong>Sunday, 14th December 2025 — 6:00 PM to 9:00 PM</strong></div>
+          <div className="date">
+            <strong>Sunday, 14th December 2025</strong>
+            <div style={{ marginTop: '8px', fontSize: '16px' }}>6:00 PM to 9:00 PM</div>
+          </div>
           <div className="gold-line"></div>
           <div className="details">
             <div className="venue">PM PALACE, Althara, Guruvayur</div>
@@ -199,14 +212,11 @@ const HomePage = () => {
                 href="https://www.google.com/maps?rlz=1C1PNBB_enDE1127DE1127&um=1&ie=UTF-8&fb=1&gl=de&sa=X&geocode=KU3QHpTVv6c7MSvgtApN23T1&daddr=PM+PALACE,+kunnathoor,+punnayurkulam,+Althara,+Guruvayur,+Kerala+679561,+India" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="btn-subtle"
               >
                 Open in Maps
               </a>
             </div>
-          </div>
-
-          <div className="actions" style={{ marginTop: '24px' }}>
-            <button className="btn" onClick={() => scrollToSection(topRef)}>Back to Top</button>
           </div>
         </div>
         <div className="footer-note">We look forward to celebrating with you.</div>

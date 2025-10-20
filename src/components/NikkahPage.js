@@ -37,7 +37,7 @@ const NikkahPage = () => {
           <p>Bliss Haven, Lake Line Road, Puzhayoram Residency, Madathil Padam, Feroke</p>
         </div>
 
-        <div className="date"><strong>Saturday, 13th December 2025 — 11:30 AM</strong></div>
+        <div className="date"><strong>Saturday, 13th December 2025 11:30 AM</strong></div>
         <div className="gold-line"></div>
         <div className="details">
           <div className="venue">MKH Auditorium — Convention Center, Kuzhimanna, Malappuram</div>
