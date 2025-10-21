@@ -106,7 +106,7 @@ const HomePage = () => {
           </div>
 
           <div className="details">
-            Scroll down or click the buttons below to view full details and location links.
+            Scroll down or click the buttons above to view full details and location links.
           </div>
         </div>
         <div className="footer-note">
@@ -119,7 +119,7 @@ const HomePage = () => {
         <div className="content">
           <div className="card-title">NIKKAH</div>
           <div className="assalamu">السلام عليكم</div>
-          <div className="lead">You are cordially invited to the Nikkah</div>
+          <div className="lead">You are cordially invited to the Nikkah of</div>
 
           <div 
             className="names" 
@@ -173,7 +173,7 @@ const HomePage = () => {
         <div className="content">
           <div className="card-title">WEDDING RECEPTION</div>
           <div className="assalamu">السلام عليكم</div>
-          <div className="lead">You are cordially invited to the Wedding Reception</div>
+          <div className="lead">You are cordially invited to the Wedding Reception of</div>
 
           <div 
             className="names" 
@@ -226,3 +226,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
