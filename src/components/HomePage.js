@@ -93,13 +93,25 @@ const HomePage = () => {
           <div className="actions">
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
               <button className="btn" onClick={() => scrollToSection(nikkahRef)}>View Nikkah</button>
-              <div style={{ fontSize: '12px', color: 'rgba(207, 168, 90, 0.9)', textAlign: 'center', letterSpacing: '0.5px' }}>
+              <div style={{ 
+                fontSize: '15px', // increased size
+                color: 'rgba(207, 168, 90, 0.9)', 
+                textAlign: 'center', 
+                letterSpacing: '0.5px',
+                fontWeight: '500'
+              }}>
                 13th Dec. • Noon
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px' }}>
               <button className="btn ghost" onClick={() => scrollToSection(receptionRef)}>View Reception</button>
-              <div style={{ fontSize: '12px', color: 'rgba(207, 168, 90, 0.9)', textAlign: 'center', letterSpacing: '0.5px' }}>
+              <div style={{ 
+                fontSize: '15px', // increased size
+                color: 'rgba(207, 168, 90, 0.9)', 
+                textAlign: 'center', 
+                letterSpacing: '0.5px',
+                fontWeight: '500'
+              }}>
                 14th Dec. • Evening
               </div>
             </div>
@@ -226,4 +238,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
