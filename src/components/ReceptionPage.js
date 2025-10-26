@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PageStyles.css';
+import './HomePage.css';
 
 const ReceptionPage = () => {
   const [showBasithFamily, setShowBasithFamily] = useState(false);
@@ -8,9 +8,46 @@ const ReceptionPage = () => {
   return (
     <article className="page active">
       <div className="content">
-        <div className="card-title">WEDDING RECEPTION</div>
-        <div className="assalamu">السلام عليكم</div>
-        <div className="lead">You are cordially invited to the Wedding Reception</div>
+        <div className="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <div className="bismillah-translation">
+          In the name of Allah, the Most Beneficent, the Most Merciful
+        </div>
+
+        <div style={{ 
+          fontSize: '17px', 
+          fontWeight: '700', 
+          marginTop: '24px', 
+          color: 'var(--gold)',
+          letterSpacing: '1px'
+        }}>
+          Aboobacker Sidhique &amp; Sheeba Sidhique
+        </div>
+        <p style={{ 
+          fontSize: '14px', 
+          marginTop: '8px', 
+          color: 'rgba(255,255,255,0.9)',
+          fontStyle: 'italic'
+        }}>
+          Theruvath Kadavil House, Anchangadi, Chavakkad
+        </p>
+        <div style={{
+          margin: '24px auto',
+          padding: '16px 24px',
+          background: 'linear-gradient(135deg, rgba(207, 168, 90, 0.1), rgba(207, 168, 90, 0.05))',
+          borderRadius: '12px',
+          border: '1px solid rgba(207, 168, 90, 0.2)',
+          maxWidth: '600px'
+        }}>
+          <p style={{ 
+            fontSize: '15px', 
+            lineHeight: '1.8',
+            color: 'var(--gold)',
+            textShadow: '0 0 10px rgba(207, 168, 90, 0.6), 0 0 20px rgba(207, 168, 90, 0.4)',
+            fontWeight: '500'
+          }}>
+            With the grace of Allah (SWT), we are pleased to invite you to the Wedding Reception of
+          </p>
+        </div>
 
         <div 
           className="names" 
@@ -37,7 +74,10 @@ const ReceptionPage = () => {
           <p>Bliss Haven, Lake Line Road, Puzhayoram Residency, Madathil Padam, Feroke</p>
         </div>
 
-        <div className="date"><strong>Sunday, 14th December 2025 — 6:00 PM to 9:00 PM</strong></div>
+        <div className="date">
+          <strong>Sunday, 14th December 2025</strong>
+          <div style={{ marginTop: '8px', fontSize: '16px' }}>6:00 PM to 9:00 PM</div>
+        </div>
         <div className="gold-line"></div>
         <div className="details">
           <div className="venue">PM PALACE, Althara, Guruvayur</div>
@@ -46,13 +86,16 @@ const ReceptionPage = () => {
               href="https://www.google.com/maps?rlz=1C1PNBB_enDE1127DE1127&um=1&ie=UTF-8&fb=1&gl=de&sa=X&geocode=KU3QHpTVv6c7MSvgtApN23T1&daddr=PM+PALACE,+kunnathoor,+punnayurkulam,+Althara,+Guruvayur,+Kerala+679561,+India" 
               target="_blank" 
               rel="noopener noreferrer"
+              className="btn-subtle"
             >
               Open in Maps
             </a>
           </div>
         </div>
       </div>
-      <div className="footer-note">We look forward to celebrating with you.</div>
+      <div className="footer-note">
+        <strong>Your presence will be our greatest blessing</strong>
+      </div>
     </article>
   );
 };
